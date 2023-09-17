@@ -3,6 +3,4 @@ numpy
 pandas
 pydeck
 streamlit
-streamlit-option-menu 
 streamlit-ace
-streamlit-pages
