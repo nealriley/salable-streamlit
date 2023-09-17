@@ -3,3 +3,9 @@ numpy
 pandas
 pydeck
 streamlit
+streamlit-option-menu 
+langchain 
+streamlit-audiorecorder 
+streamlit-ace
+sqlalchemy
+streamlit-pages
