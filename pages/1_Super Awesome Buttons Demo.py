@@ -2,7 +2,7 @@ import streamlit as st
 import streamlit.components.v1 as components  # Import Streamlit
 import uuid
 import time
-from streamlit.hello.utils import check_grantee_id
+from utils import check_grantee_id
 
 st.title("Welcome to Buttons for Teams!")
 
@@ -17,7 +17,8 @@ if 'grantee_id' not in st.session_state:
     if "grantee_id" not in params:
       myuuid = uuid.uuid4()    
       st.session_state['grantee_id'] = str(myuuid)
-    st.session_state['grantee_id'] = params['grantee_id'][0]
+    else: 
+      st.session_state['grantee_id'] = params['grantee_id'][0]
 if 'team_grantee_id' not in st.session_state:
     myuuid = uuid.uuid4()    
     st.session_state['team_grantee_id'] = str(myuuid)
@@ -103,8 +104,8 @@ components.html("""
   })();
 </script>
 """ % (st.session_state['grantee_id'], 
-      'https://8501-salable-streamlitsalabl-yziz9jswbmt.ws.adaptavist.gitpod.cloud/App-Example_-_Team_Awesome',st.session_state['grantee_id'], 
-      'https://8501-salable-streamlitsalabl-yziz9jswbmt.ws.adaptavist.gitpod.cloud/App-Example_-_Team_Awesome', st.session_state['grantee_id'], 
+      'https://build-your-businsess.streamlit.app//Super_Awesome_Buttons_Demo',st.session_state['grantee_id'], 
+      'https://build-your-businsess.streamlit.app//Super_Awesome_Buttons_Demo', st.session_state['grantee_id'], 
       st.session_state['grantee_id']), width=600, height=500)
 
 st.markdown("---")
