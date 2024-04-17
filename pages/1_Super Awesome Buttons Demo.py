@@ -148,8 +148,8 @@ components.html("""
   })();
 </script>
 """ % (st.session_state['grantee_id'], 
-      'https://8501-salable-streamlitsalabl-yziz9jswbmt.ws.adaptavist.gitpod.cloud/App-Example_-_Team_Awesome',st.session_state['team_grantee_id'], 
-      'https://8501-salable-streamlitsalabl-yziz9jswbmt.ws.adaptavist.gitpod.cloud/App-Example_-_Team_Awesome', st.session_state['team_grantee_id'], 
+      'https://build-your-businsess.streamlit.app//Super_Awesome_Buttons_Demo',st.session_state['team_grantee_id'], 
+      'https://build-your-businsess.streamlit.app//Super_Awesome_Buttons_Demo', st.session_state['team_grantee_id'], 
       st.session_state['grantee_id']), width=600, height=500)
 with st.sidebar:
     st.write(f"""
